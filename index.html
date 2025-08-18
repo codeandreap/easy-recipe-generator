@@ -4,48 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Generator</title>
-    <style src="src/style.css"></style>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header>
-      <h1>Welcome to the Recipe Generator</h1>
-    </header>
-    <main>
-      <p>
-        Have food in your fridge or pantry that you need to use? Enter it here
-        for an easy recipe that will put food on the table in 30 minutes.
-      </p>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter ingredient"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        The recipe<br />
-        will go<br />
-        here
-      </div>
-    </main>
-    <footer>
-      This project was coded by<a
-        href="https://github.com/codeandreap"
-        target="blank"
-        >Andrea Pash</a
-      >, is open-sourced on
-      <a
-        href="https://github.com/codeandreap/easy-recipe-generator"
-        target="blank"
-        >Github</a
-      >, and hosted on
-      <a href="https://easy-recipe-ai-generator.netlify.app/" target="blank"
-        >Netlify</a
-      >.
-    </footer>
+    <div class="container">
+      <header>
+        <h1>Welcome to the Recipe Generator</h1>
+      </header>
+      <main>
+        <p>
+          Have food in your fridge or pantry that you need to use? Enter it here
+          for an easy recipe that will put food on the table in 30 minutes.
+        </p>
+
+        <form>
+          <input
+            type="text"
+            placeholder="Enter ingredient"
+            autofocus
+            required
+            autocomplete="off"
+            class="ingredient-entry"
+          />
+          <input type="submit" class="recipe-button" />
+        </form>
+        <div class="recipe">
+          The recipe<br />
+          will go<br />
+          here
+        </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/codeandreap" target="blank">Andrea Pash</a>,
+        is open-sourced on
+        <a
+          href="https://github.com/codeandreap/easy-recipe-generator"
+          target="blank"
+          >Github</a
+        >, and hosted on
+        <a href="https://easy-recipe-ai-generator.netlify.app/" target="blank"
+          >Netlify</a
+        >.
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
