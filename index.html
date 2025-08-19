@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Generator</title>
     <link rel="stylesheet" href="src/style.css" />
   </head>
@@ -24,15 +25,11 @@
             autofocus
             required
             autocomplete="off"
-            class="ingredient-entry"
+            class="ingredient-entry-form"
           />
           <input type="submit" class="recipe-button" />
         </form>
-        <div class="recipe">
-          The recipe<br />
-          will go<br />
-          here
-        </div>
+        <div class="recipe" id="recipe"></div>
       </main>
       <footer>
         This project was coded by
