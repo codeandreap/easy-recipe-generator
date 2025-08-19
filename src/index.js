@@ -4,10 +4,11 @@ function generateRecipe(event) {
   let recipeElement = document.querySelector("#recipe");
   recipeElement.innerHTML = "1 onion chopped";
   new Typewriter("#recipe", {
-  strings: "1 onion chopped",
-  autoStart: true,
-  delay: 1,
-  cursor: "",
+    strings: "1 onion chopped",
+    autoStart: true,
+    delay: 1,
+    cursor: "",
+  });
 }
 
 let recipeFormElement = document.querySelector("#ingredient-entry-form");
