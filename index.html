@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Generator</title>
     <link rel="stylesheet" href="src/style.css" />
@@ -18,7 +19,7 @@
           for an easy recipe that will put food on the table in 30 minutes.
         </p>
 
-        <form>
+        <form id="ingredient-entry-form">
           <input
             type="text"
             placeholder="Enter ingredient"
@@ -26,6 +27,7 @@
             required
             autocomplete="off"
             class="ingredient-entry-form"
+            id="user-instructions"
           />
           <input type="submit" class="recipe-button" />
         </form>
