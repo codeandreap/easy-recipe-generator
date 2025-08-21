@@ -16,22 +16,25 @@
       <main>
         <p>
           Have food in your fridge or pantry that you need to use? Enter it here
-          for an easy recipe that will put food on the table in 30 minutes.
+          for an easy recipe that will put food on the table in no time.
         </p>
+        <div class="form-container">
+          <form id="ingredient-entry-form">
+            <input
+              type="text"
+              placeholder="Enter ingredient"
+              autofocus
+              required
+              autocomplete="off"
+              class="ingredient-entry-form"
+              id="user-instructions"
+            />
+            <input type="submit" class="recipe-button" />
+          </form>
 
-        <form id="ingredient-entry-form">
-          <input
-            type="text"
-            placeholder="Enter ingredient"
-            autofocus
-            required
-            autocomplete="off"
-            class="ingredient-entry-form"
-            id="user-instructions"
-          />
-          <input type="submit" class="recipe-button" />
-        </form>
-        <div class="recipe" id="recipe"></div>
+          <div class="example">i.e. ground beef, onion, or corn</div>
+        </div>
+        <div class="recipe hidden" id="recipe"></div>
       </main>
       <footer>
         This project was coded by
